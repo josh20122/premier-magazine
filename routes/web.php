@@ -39,4 +39,9 @@ Route::get('/subscribe', function(){
     return inertia('Pricing');
 });
 
+
+Route::get('/comming-soon', function(){
+    return inertia('ComingSoon');
+});
+
 require __DIR__.'/auth.php';
