@@ -8,20 +8,20 @@ const Header = () => {
 
     return (
         <>
-            <div className="navbar bg-neutral fixed top-0 opacity-100 z-50 ">
+            <div className="navbar bg-neutral fixed top-0 opacity-100 text-white z-50 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label className=" text-white ">PREMIER</label>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                            className="menu text-black menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             <li>
                                 <a>Item 1</a>
                             </li>
                             <li>
                                 <a>Parent</a>
-                                <ul className="p-2">
+                                <ul className="p-2 text-black">
                                     <li>
                                         <a>Submenu 1</a>
                                     </li>
@@ -35,17 +35,16 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu  menu-horizontal px-1">
                         <li>
                             <a>Item 1</a>
                         </li>
                         <li tabIndex={0}>
                             <details>
                                 <summary>Parent</summary>
-                                <ul className="p-2">
+                                <ul className="p-2 text-black">
                                     <li>
                                         <a>Submenu 1</a>
                                     </li>
@@ -61,7 +60,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn">Get started</a>
                 </div>
             </div>
         </>
